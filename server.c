@@ -34,6 +34,7 @@ void	handle_signal(int signal, siginfo_t *info, void *context)
 	static char	c;
 
 	(void)context;
+	printf("%d\n", comp_id);
 	if (comp_id != info->si_pid)
 	{
 		i = 0;
